@@ -1,0 +1,22 @@
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      username: admin
+      password: pass
+      database: webflux-course
+      port: 27017
+      host: localhost
+      auto-index-creation: true
+  logging:
+   level:
+     org:
+      springframework:
+        web:
+          reactive: DEBUG
+        data:
+          mongodb: DEBUG
+springdoc:
+  api-docs:
+    path: /api-docs
+
